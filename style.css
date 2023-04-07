@@ -1,0 +1,92 @@
+/* Estilos gerais */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 48px;
+    margin-top: 40px;
+  }
+  
+  form {
+    margin: 0 auto;
+    max-width: 500px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 32px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #666;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+  
+  button {
+    background-color: #3f51b5;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #2c3e50;
+  }
+  
+  /* Estilos específicos */
+  #parcelas {
+    margin-top: 20px;
+  }
+  
+  #quantidade-parcelas {
+    margin-right: 10px;
+  }
+  
+  #valor-parcelas {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    color: #555;
+    padding: 12px;
+    border-radius: 4px;
+  }
+  
+  #valor-total {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    color: #555;
+    padding: 12px;
+    border-radius: 4px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    form {
+      max-width: 90%;
+    }
+  
+    h1 {
+      font-size: 36px;
+      margin-top: 20px;
+    }
+  }
+  
