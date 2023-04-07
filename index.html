@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Máquina da Heloísa</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Máquina da Heloísa</h1>
+    <form>
+      <label for="valor-venda">Valor do Produto:</label>
+      <input
+        type="text"
+        id="valor-venda"
+        name="valor-venda"
+        min="0"
+        step="0.01"
+        required
+      /><br /><br />
+
+      <label for="modalidade">Modalidade:</label>
+      <select id="modalidade" name="modalidade" required>
+        <option value="debito">Débito</option>
+        <option value="credito">Crédito</option></select
+      ><br /><br />
+
+      <div id="parcelas" style="display: none">
+        <label for="quantidade-parcelas" id="label-parcelas"
+          >Quantidade de Parcelas:</label
+        >
+        <select id="quantidade-parcelas" name="quantidade-parcelas">
+          <option value="1">1x</option>
+          <option value="2">2x</option>
+          <option value="3">3x</option>
+          <option value="4">4x</option>
+          <option value="5">5x</option>
+          <option value="6">6x</option>
+          <option value="7">7x</option>
+          <option value="8">8x</option>
+          <option value="9">9x</option>
+          <option value="10">10x</option>
+          <option value="11">11x</option>
+          <option value="12">12x</option>
+          <option value="13">13x</option>
+          <option value="14">14x</option>
+          <option value="15">15x</option>
+          <option value="16">16x</option>
+          <option value="17">17x</option>
+          <option value="18">18x</option></select
+        ><br /><br />
+
+        <label for="valor-parcelas">Valor das Parcelas:</label>
+        <input
+          type="text"
+          id="valor-parcelas"
+          name="valor-parcelas"
+          readonly
+        /><br /><br />
+      </div>
+
+      <label for="valor-total">Valor Total:</label>
+      <input
+        type="text"
+        id="valor-total"
+        name="valor-total"
+        readonly
+      /><br /><br />
+
+      <button type="button" id="calcular">Calcular</button>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
